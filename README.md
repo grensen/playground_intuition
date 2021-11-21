@@ -55,6 +55,8 @@ The language is not so important, the main thing is to understand the process, w
 
 This could now be seen as a perceptron, input neurons, in this case only one, are connected with weights to an output neuron. The output neuron is then usually activated. As with the ReLU function, but we don't do that here.
 
+[ReLU](https://github.com/tensorflow/playground/blob/master/src/nn.ts#L60) from the code:
+
 ~~~ts
 public static RELU: ActivationFunction = {
   output: x => Math.max(0, x),
@@ -63,6 +65,7 @@ public static RELU: ActivationFunction = {
 ~~~
 
 Instead of hidden activations, the output neuron is activated directly. This is difficult to see in the Playground code.
+But you can find it right [here](https://github.com/tensorflow/playground/blob/master/src/heatmap.ts#L169):
 
 ~~~ts
 let value = data[x][y];
@@ -73,7 +76,7 @@ if (discretize) {
 
 The good news is, we don't need programm code anymore, a calculator is enough. It was important for me to show that the code, even if it seems ultra complicated, can be understood better than you might have thought at first. 
 
-To the prediction map...
+To the prediction map, let's make the first calculation...
 
 ---
 
