@@ -10,7 +10,7 @@ But before it really starts there are two things to consider. X1 and X2 represen
 
 The bias can be seen when using deep neural networks as shown in the figure. Unfortunately, the output neuron was apparently forgotten and does not offer the possibility to set the bias. That means to understand everything correctly we have to add a bias of 0.1 to every equation, even if the output neuron seems not there. Everything here aims to understand the cores in deep learning, the perceptrons, which are the basis for what runs around today with such trendy terms.
 
-Tensorflow Playground [code](https://github.com/tensorflow/playground/blob/master/src/nn.ts#L60) example:
+Tensorflow Playground [code](https://github.com/tensorflow/playground/blob/master/src/nn.ts#L59) example:
 
 ~~~ts
   /** Recomputes the node's output and returns it. */
@@ -55,7 +55,7 @@ The language is not so important, the main thing is to understand the process, w
 
 This could now be seen as a perceptron, input neurons, in this case only one, are connected with weights to an output neuron. The output neuron is then usually activated. As with the ReLU function, but we don't do that here.
 
-[ReLU](https://github.com/tensorflow/playground/blob/master/src/nn.ts#L60) from the code:
+[ReLU](https://github.com/tensorflow/playground/blob/master/src/nn.ts#L122) from the code:
 
 ~~~ts
 public static RELU: ActivationFunction = {
@@ -65,7 +65,7 @@ public static RELU: ActivationFunction = {
 ~~~
 
 Instead of hidden activations, the output neuron is activated directly. This is difficult to see in the Playground code.
-But you can find it right [here](https://github.com/tensorflow/playground/blob/master/src/heatmap.ts#L169):
+But you can find it right [here](https://github.com/tensorflow/playground/blob/master/src/heatmap.ts#L168):
 
 ~~~ts
 let value = data[x][y];
