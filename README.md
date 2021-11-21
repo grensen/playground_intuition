@@ -76,7 +76,7 @@ if (discretize) {
 
 The good news is, we don't need programm code anymore, a calculator is enough. It was important for me to show that the code, even if it seems ultra complicated, can be understood better than you might have thought at first. 
 
-To the prediction map, let's make the first calculation...
+To the prediction map, let's make the first calculation.....
 
 ---
 
